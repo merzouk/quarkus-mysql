@@ -34,7 +34,8 @@ nb-configuration.xml
 # patch
 *.orig
 *.rej
-*.log
+log.txt
+*.json
 use_api
 # Local environment
 .env
