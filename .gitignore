@@ -37,5 +37,6 @@ nb-configuration.xml
 log.txt
 *.json
 use_api
+data.json
 # Local environment
 .env

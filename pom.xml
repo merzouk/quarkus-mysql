@@ -9,7 +9,7 @@
     <compiler-plugin.version>3.8.1</compiler-plugin.version>
     <lombok.version>1.18.22</lombok.version>
     <mapstruct.version>1.4.2.Final</mapstruct.version>
-    <maven.compiler.release>14</maven.compiler.release>
+    <maven.compiler.release>17</maven.compiler.release>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <quarkus.package.add-runner-suffix>true</quarkus.package.add-runner-suffix>
