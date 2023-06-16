@@ -8,7 +8,6 @@ import org.com.customer.models.Customer;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
-import org.mapstruct.ReportingPolicy;
 import org.mapstruct.factory.Mappers;
 
 /**
@@ -26,15 +25,15 @@ public interface CustomerMapper
 {
    CustomerMapper INSTANCE = Mappers.getMapper( CustomerMapper.class );
    
-   List<Customer> toDomainList( List<CustomerEntity> entities );
+   List<Customer> toListModel(List<CustomerEntity> entities );
    
-   Customer toDomain( CustomerEntity entity );
+   Customer toModel(CustomerEntity entity );
    
-   @InheritInverseConfiguration(name = "toDomain")
+   @InheritInverseConfiguration(name = "toModel")
    CustomerEntity toEntity( Customer domain );
    
-   void updateEntityFromDomain( Customer domain, @MappingTarget
+   void updateEntityFromModel(Customer domain, @MappingTarget
    CustomerEntity entity );
    
-   void updateDomainFromEntity( CustomerEntity entity, @MappingTarget Customer domain );
+   void updateModelFromEntity(CustomerEntity entity, @MappingTarget Customer domain );
 }
