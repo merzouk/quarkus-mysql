@@ -137,7 +137,9 @@ public class CustomerService
         {
             throw new CustomerException( "Find Customer by email not valid : "+email );
         }
-        return customerRepository.find( "email", email ).firstResultOptional().map( customerMapper::toModel);
+        return customerRepository.find( "email", email )
+                                 .firstResultOptional()
+                                 .map( customerMapper::toModel);
     }
 
     @Transactional(rollbackOn = Exception.class)

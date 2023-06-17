@@ -22,9 +22,9 @@ insert into  manage.customer
     email  ,
     phone 
 ) values 
-(1, 'Ryacho',    'Louis',     'MEN', 'Mr',  'ryacho@gmail.com',    '0112233445'),
-(2, 'Akka',   'Charlotte', 'MEN', 'Mme', 'akka@gmail.com',   '0112233446'),
-(3, 'Mrzk', 'Gaspard',   'MEN', 'Mr',  'mrzk@gmail.com', '0112233447');
+(1, 'Ryacho',    'Louis',     'MEN', 'Mr',  'ryacho@gmail.com', '0112233445'),
+(2, 'Akka',      'Charlotte', 'MEN', 'Mme', 'akka@gmail.com',   '0112233446'),
+(3, 'Mrzk',      'Gaspard',   'MEN', 'Mr',  'mrzk@gmail.com',   '0112233447');
 
 -------------------------------------------------------------------------------------------
 
@@ -61,6 +61,6 @@ insert into  customer
     email  ,
     phone 
 ) values 
-(1, 'Ryacho',    'Louis',     'MEN', 'Mr',  'ryacho@gmail.com',    '0112233445'),
-(2, 'Akka',   'Charlotte', 'MEN', 'Mme', 'akka@gmail.com',   '0112233446'),
-(3, 'Mrzk', 'Gaspard',   'MEN', 'Mr',  'mrzk@gmail.com', '0112233447');
+(1, 'Ryacho',    'Louis',     'MEN', 'Mr',  'ryacho@gmail.com', '0112233445'),
+(2, 'Akka',      'Charlotte', 'MEN', 'Mme', 'akka@gmail.com',   '0112233446'),
+(3, 'Mrzk',      'Gaspard',   'MEN', 'Mr',  'mrzk@gmail.com',   '0112233447');
