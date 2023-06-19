@@ -5,12 +5,11 @@ import java.util.regex.Pattern;
 
 public final class Tools
 {
-    private static final String regex = "^[a-zA-Z0-9_!#$%&amp;'*+/=?`{|}~^.-]+@[a-zA-Z0-9.-]+$";
-    private static final Pattern pattern = Pattern.compile(regex);
+    private static final Pattern VALID_EMAIL_ADDRESS_REGEX =
+            Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
 
     public static boolean validateEmail(String emailValue)
     {
-        Matcher matcher = pattern.matcher(emailValue);
-        return matcher.matches();
+        return VALID_EMAIL_ADDRESS_REGEX.matcher(emailValue).matches();
     }
 }
