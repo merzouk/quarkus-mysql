@@ -197,8 +197,8 @@ public class CustomerService
     {
         if( Objects.isNull( customer ) )
         {
-            logger.error("Saving new Customer not valid ");
-            throw new CustomerException( "Saving new Customer not valid" );
+            logger.error("updating Customer not valid ");
+            throw new CustomerException( "updating Customer not valid" );
         }
         logger.debug( "Updating Customer : {}", customer.toString() );
         if( Objects.isNull( customer.getCustomerId() ) )
