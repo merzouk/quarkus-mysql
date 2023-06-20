@@ -195,6 +195,11 @@ public class CustomerService
     @Transactional(rollbackOn = Exception.class)
     public void update( @Valid Customer customer )
     {
+        if( Objects.isNull( customer ) )
+        {
+            logger.error("Saving new Customer not valid ");
+            throw new CustomerException( "Saving new Customer not valid" );
+        }
         logger.debug( "Updating Customer : {}", customer.toString() );
         if( Objects.isNull( customer.getCustomerId() ) )
         {
