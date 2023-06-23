@@ -6,7 +6,7 @@ If you want to learn more about Quarkus, please visit its website: https://quark
 
 ## Running the application in dev mode
 
-## create data base
+## Create data base
 ```
 
 CREATE DATABASE manage;
